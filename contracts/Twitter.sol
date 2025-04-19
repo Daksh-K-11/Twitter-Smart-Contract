@@ -29,6 +29,16 @@ contract Twitter {
         _;
     }
 
+    function getTotalLikes(address _author) external view returns(uint) {
+        uint totalLikes;
+
+        for (uint i = 0; i < tweets[_author].length; i++){
+            totalLikes += tweets[_author][i].likes;
+        }
+
+        return totalLikes;
+    }
+
     function changeTweetLength(uint16 newTweetLength) public onlyOwner {
         MAX_TWEET_LENGTH = newTweetLength;
     }
@@ -72,4 +82,5 @@ contract Twitter {
     function getAllTweets(address _owner) public view returns(Tweet[] memory) {
         return tweets[_owner];
     }
+
 }
