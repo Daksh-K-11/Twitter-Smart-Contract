@@ -48,7 +48,41 @@
 			"sourceMap": ""
 		},
 		"gasEstimates": null,
-		"methodIdentifiers": {}
+		"methodIdentifiers": {
+			"getProfile(address)": "0f53a470"
+		}
 	},
-	"abi": []
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_user",
+					"type": "address"
+				}
+			],
+			"name": "getProfile",
+			"outputs": [
+				{
+					"components": [
+						{
+							"internalType": "string",
+							"name": "displayName",
+							"type": "string"
+						},
+						{
+							"internalType": "string",
+							"name": "bio",
+							"type": "string"
+						}
+					],
+					"internalType": "struct IProfile.UserProfile",
+					"name": "",
+					"type": "tuple"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
 }

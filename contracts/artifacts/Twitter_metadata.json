@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_profileContract",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -474,11 +480,11 @@
 			]
 		},
 		"contracts/Twitter.sol": {
-			"keccak256": "0xd01eadf3e4497fabc058c8d229ec46a778badae47a40e9b7ce86a638f3844bf5",
+			"keccak256": "0xbddddcefcd21daa05ebedf43b5ec8a46f2b160ab3f45f03580c058801a0a8ee9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://725176e1d874ebe4bb4dbfd35e58fbccc54045ffa5bf5e258d064a0ac7fa4b3e",
-				"dweb:/ipfs/QmS2khru3ewXvuJiz4Cd5iFeAnDqfSdyTCBXTekQJxWhQY"
+				"bzz-raw://3a38625e12e28732b0c8b2c695427613f3cf573f123997d34e3bd12cd3056df9",
+				"dweb:/ipfs/QmRGSnJmoE57keuvjquPdyUdKUw2zn6JFuJ7Emii9ewkNw"
 			]
 		}
 	},

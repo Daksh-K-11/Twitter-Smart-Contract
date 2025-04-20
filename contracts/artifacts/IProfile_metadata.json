@@ -4,7 +4,39 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getProfile",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "displayName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bio",
+								"type": "string"
+							}
+						],
+						"internalType": "struct IProfile.UserProfile",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -49,11 +81,11 @@
 			]
 		},
 		"contracts/Twitter.sol": {
-			"keccak256": "0x9d28410a394a9cb73462b8ea84e126276341423d4b3cadf00e09ff65f2e7b7fc",
+			"keccak256": "0xbddddcefcd21daa05ebedf43b5ec8a46f2b160ab3f45f03580c058801a0a8ee9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0c58f6e36cfc7be73ca4ebd484727c0cf82c930cf372fafeb7708f60d1fd35a9",
-				"dweb:/ipfs/QmfDvN6bXSdzWKgKhymfGTnj3n5FF1bqevj2xVXVbDDcVR"
+				"bzz-raw://3a38625e12e28732b0c8b2c695427613f3cf573f123997d34e3bd12cd3056df9",
+				"dweb:/ipfs/QmRGSnJmoE57keuvjquPdyUdKUw2zn6JFuJ7Emii9ewkNw"
 			]
 		}
 	},
