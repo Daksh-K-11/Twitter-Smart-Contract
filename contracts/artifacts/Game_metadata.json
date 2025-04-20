@@ -84,11 +84,11 @@
 	},
 	"sources": {
 		"contracts/Game.sol": {
-			"keccak256": "0x1b8a4791133470efaf458d1640093d50f77815a559e0361594cf11ffdfa81e91",
+			"keccak256": "0x3ccf701592dd77d5c7cd1d31f2e1a7ed178bb519a6c18ffdf33ed78e2e39484b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36a86ff412196194308a0ab2d538e9052f570954672797a407ea7c82b8d5b3a6",
-				"dweb:/ipfs/QmcRCQbpnwncNqeZPN5vmeWSbHiN7VEDitPgbZMxJrWDis"
+				"bzz-raw://fa7d4e4bd213de6b103afb4ff16a30d98dc7dd72f4c41004b7af6c845a7b6234",
+				"dweb:/ipfs/QmZ4CqC3nJ78b1um8MAcg6nrQpYQYvnwMW5f7jq4P8MuHG"
 			]
 		}
 	},
