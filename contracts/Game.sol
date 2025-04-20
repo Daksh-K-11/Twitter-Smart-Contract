@@ -2,29 +2,26 @@
 
 pragma solidity ^0.8.0;
 
-contract MultiplayerGame {
-    mapping(address => bool) public players;
+// 2️⃣ Set up a connection to the User Contract throught IUser in constructor
+// 3️⃣ Call the createUser function with the correct inputs
 
-    function joinGame() public virtual {
-        players[msg.sender] = true;
-    }
+interface IUser {
+    function createUser(address userAddress, string memory username) external;
 }
 
-contract Game is MultiplayerGame {
-    string public gameName;
-    uint256 public playerCount;
+contract Game {
+    uint public gameCount;
+    IUser public userContract;
 
-    constructor(string memory _gameName) {
-        gameName = _gameName;
-        playerCount = 0;
+    constructor(address _userContractAddress) {
+        userContract = IUser(_userContractAddress);
     }
 
-    function startGame() public {
-        
-    }
-
-    function joinGame() public override {
-       super.joinGame();
-       playerCount++;
+    function startGame(string memory username) external {
+        // Create a user in the User contract
+        gameCount++;
+    
+        // CODE HERE
+        userContract.createUser(msg.sender, username);
     }
 }

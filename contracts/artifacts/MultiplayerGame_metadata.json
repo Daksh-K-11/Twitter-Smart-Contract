@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Game.sol": "MultiplayerGame"
+			"contracts/Inherit_Game.sol": "MultiplayerGame"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -59,7 +59,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Game.sol": {
+		"contracts/Inherit_Game.sol": {
 			"keccak256": "0xdf50d63ae33443d3d9023175d790c734e5867bad8d84c7ec0476ee4fb560bf47",
 			"license": "MIT",
 			"urls": [

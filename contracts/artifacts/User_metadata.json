@@ -9,47 +9,44 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_userContractAddress",
+						"name": "userAddress",
 						"type": "address"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "gameCount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
 					{
 						"internalType": "string",
 						"name": "username",
 						"type": "string"
 					}
 				],
-				"name": "startGame",
+				"name": "createUser",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "userContract",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "contract IUser",
+						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"name": "players",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "playerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "score",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -69,7 +66,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Game.sol": "Game"
+			"contracts/User.sol": "User"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -83,12 +80,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Game.sol": {
-			"keccak256": "0x1b8a4791133470efaf458d1640093d50f77815a559e0361594cf11ffdfa81e91",
+		"contracts/User.sol": {
+			"keccak256": "0xf90b0f48ba67850c2ee42557eb96ae093fda2a13d33115c366b7e58121c453e7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://36a86ff412196194308a0ab2d538e9052f570954672797a407ea7c82b8d5b3a6",
-				"dweb:/ipfs/QmcRCQbpnwncNqeZPN5vmeWSbHiN7VEDitPgbZMxJrWDis"
+				"bzz-raw://a01d17bd83a7688e8fe5121583f9da0a6e662c6fc203192f5021488a04b72201",
+				"dweb:/ipfs/QmPNZtdkcqxmqE2bKJgpA45hcxyfdoWtCnXUejq2ZZKnfC"
 			]
 		}
 	},
